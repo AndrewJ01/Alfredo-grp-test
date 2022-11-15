@@ -3,8 +3,9 @@
 
 # First, get the packages you need for the code
 	library(ggplot2)
-	library(reshape)
-	library(vegan)
+
+# Next, find the repository on your local machine and set it as your working directory:
+	setwd("C:/Users/Andrew/Documents/GitHub/Alfredo-grp-test")
 
 # Next, open the practice data
 	# Note, limit the “hard-coding” of the input and output files
@@ -12,16 +13,14 @@
 	# define a variable early in your code that stores the path to that file.
 
 	input_file <- "data/Bw_cycle_counts_and_dim1_dim2_data.csv" 
-	output_file <- "data/results.csv"
-
+	
 	# read input
 	input_data <- read.csv(input_file)
 	# get number of samples in data
 	sample_number <- nrow(input_data)
-	# generate results
-	results <- some_other_function(input_file, sample_number)
-	# write results
-	write.table(results, output_file)
+	sample_number
+
+
 
 # Other tips:
 	# Start each program with a description of what it does.
